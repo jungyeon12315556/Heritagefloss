@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/f1e3afabbc.js" crossorigin="anonymous"></script>
+    <!-- 구글웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="main.css">
+    <title>heritagefloss</title>
+    <script>
+        $(function () {
+            $(".dropdown").mouseover(function () {
+                $(this).find(".dropdown-content").css({ display: "block" });
+                $(this).find(".dropbtn").addClass("on");
+
+            });
+
+            $(".dropdown").mouseout(function () {
+                $(".dropdown-content").css({ display: "none" });
+                $(".dropbtn").removeClass("on");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="main_head">
+            <div class="logo"><img src="img/logo2-4.png" alt="heritagefloss_logo1"> <img src="img/hf_logo-11.png"
+                    alt="heritagefloss_logo2"></div>
+            <div class="menu">
+                <div class="dropdown">
+                    <button class="dropbtn">남성</button>
+                    <div class="dropdown-content">
+                        <h1>남성</h1>
+                        <div class="dropdown-container">
+                            <div class="dropdown-left">
+                                <a href="#">Outer</a>
+                                <a href="#">Top</a>
+                                <a href="#">Shirts</a>
+                                <a href="#">Hat</a>
+                                <a href="#">Accesssories</a>
+                            </div>
+                            <div class="dropdown-right">
+                                <div class="dropdown-picture"><img src="img/pp1.jpeg" alt="male_product_img1"></div>
+                                <div class="dropdown-picture"><img src="img/pp2.jpeg" alt="male_product_img2"></div>
+                                <div class="dropdown-picture"><img src="img/pp3.jpg" alt="male_product_img3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">여성</button>
+                    <div class="dropdown-content">
+                        <h1> 여성</h1>
+                        <div class="dropdown-container">
+                            <div class="dropdown-left">
+                                <a href="#">Outer</a>
+                                <a href="#">Top</a>
+                                <a href="#">Shirts</a>
+                                <a href="#">Hat</a>
+                                <a href="#">Accesssories</a>
+                            </div>
+                            <div class="dropdown-right">
+                                <div class="dropdown-picture"><img src="img/f-pp1.jpg" alt="female_product_img1"></div>
+                                <div class="dropdown-picture"><img src="img/f-pp2.jpg" alt="female_product_img2"></div>
+                                <div class="dropdown-picture"><img src="img/f-pp3.jpg" alt="female_product_img3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">키즈</button>
+                    <div class="dropdown-content">
+                        <h1> 키즈</h1>
+                        <div class="dropdown-container">
+                            <div class="dropdown-left">
+                                <a href="#">Outer</a>
+                                <a href="#">Top</a>
+                                <a href="#">Shirts</a>
+                                <a href="#">Hat</a>
+                                <a href="#">Accesssories</a>
+                            </div>
+                            <div class="dropdown-right">
+                                <div class="dropdown-picture"><img src="img/k-pp1.jpg" alt="kid_product_img1"></div>
+                                <div class="dropdown-picture"><img src="img/k-pp2.jpg" alt="kid_product_img2"></div>
+                                <div class="dropdown-picture"><img src="img/k-pp3.jpg" alt="kid_product_img3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">프로젝트</button>
+                    <div class="dropdown-content">
+                        <h1> 프로젝트</h1>
+                        <div class="dropdown-container">
+                            <div class="dropdown-left">
+                                <a href="#">Outer</a>
+                                <a href="#">Top</a>
+                                <a href="#">Shirts</a>
+                                <a href="#">Hat</a>
+                                <a href="#">Accesssories</a>
+                            </div>
+                            <div class="dropdown-right">
+                                <div class="dropdown-picture"><img src="img/p-pp1.png" alt="project_product_img1"></div>
+                                <div class="dropdown-picture"><img src="img/p-pp2.png" alt="project_product_img2"></div>
+                                <div class="dropdown-picture"><img src="img/p-pp3.png" alt="project_product_img3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon">
+                <button class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="iogin_icon"><i class="fa-regular fa-user"></i></button>
+                <button class="basket_icon"><i class="fa-solid fa-bag-shopping"></i></button>
+                <button class="list_icon"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_slider">
+            <div class="swiper mySwiper swiper1">
+                <div class="swiper-wrapper swiper-wrapper1">
+                    <div class="swiper-slide swiper-slide1"><video
+                            src="img/heritagefloss2_a1785687b505372e2dc5f9d79ba03c82_HD.mp4" width="100%" controls=""
+                            muted="" autoplay="" loop="" playsinline=""></video></div>
+                    <div class="swiper-slide swiper-slide1" id="slide2"></div>
+                    <div class="swiper-slide swiper-slide1" id="slide3"></div>
+                    <div class="swiper-slide swiper-slide1" id="slide4"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+        <section>
+            <div class="section1">
+                <h3>2024 WINTER NEW ARRIVALS</h3>
+                <!-- Swiper -->
+                <div class="swiper mySwiper2 swiper2">
+                    <div class="swiper-wrapper swiper-wrapper2">
+                        <div class="swiper-slide swiper-slide2"><img src="img/23w-01.png" alt="arrival_img1"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/23w-02.png" alt="arrival_img2"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/23w-03.png" alt="arrival_img3"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/23w-04.png" alt="arrival_img4"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/23w-05.png" alt="arrival_img5"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/23w-06.png" alt="arrival_img6"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/23w-07.png" alt="arrival_img7"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/23w-08.png" alt="arrival_img8"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/23w-09.png" alt="arrival_img9"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/23w-10.png" alt="arrival_img10"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper2", {
+                        slidesPerView: 5,
+                        spaceBetween: 30,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+
+                    });
+                </script>
+            </div>
+        </section>
+        <section>
+            <div class="section2">
+                <h3>HERITAGEFLOSS X Helinox Summer Collection 2024</h3>
+                <div class="helinox">
+                    <button>자세히 보기</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_content">
+            <div class="footer1">
+                <ul class="footer_lists">
+                    <li class="footer_li">
+                        <h3 class="footer_title">고객지원</h3>
+                        <ul class="footer_list">
+                            <li class="footer_li2"><a href="#">주문조회</a></li>
+                            <li class="footer_li2"><a href="#">문의하기</a></li>
+                            <li class="footer_li2"><a href="#">자주 묻는 질문</a></li>
+                            <li class="footer_li2"><a href="#">배송/교환/반품</a></li>
+                            <li class="footer_li2"><a href="#">매장 찾기</a></li>
+                            <li class="footer_li2"><a href="#">사이트맵</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="footer_li">
+                        <h3 class="footer_title">헤리티지플로스 소개</h3>
+                        <ul class="footer_list">
+                            <li class="footer_li2"><a href="#">지속 가능 경영</a></li>
+                            <li class="footer_li2"><a href="#">헤리티지플로스 채용</a></li>
+                            <li class="footer_li2"><a href="#">최신 뉴스</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer_li">
+                        <h3 class="footer_title">이용약관 및 법적고지</h3>
+                        <ul class="footer_list">
+                            <li class="footer_li2"><a href="#"><b>개인정보처리방침</b></a></li>
+                            <li class="footer_li2"><a href="#">이용약관</a></li>
+                            <li class="footer_li2"><a href="#">웹사이트 정책</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer2">
+                <div class="footer_flex">
+                    <div class="footer2_left">
+                        <h3>AllCottonService</h3>
+                        <p>The first line launched by Heritagefloss in 2011, ‘AllCottonService’ focused on production of
+                            cotton fabrics for jerseys - and sweats of high quality. New threads, weaves, and dyes are
+                            tested and engineered to introduce an updated collection every season.</p>
+                        <h3>SportCasual</h3>
+                        <p>Launched in 2014, SportCasual is Heritagefloss’ interpretation of sportswear from the 60-90’s
+                            era. The second brand line reinterprets old functional details of vintage clothing via
+                            modernized techniques.</p>
+                    </div>
+                    <div class="sns">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer3">
+            <img src="img/logo2-4.png" alt="heritagefloss_logo1">
+            <p class="footer3_txt">(주)헤리티지플로스｜대표자: 이윤호 서울특별시 용산구 이태원로54길 82, 1층｜사업자 등록번호: 891-81-01345｜통신판매자신고번호:
+                2021-서울용산-2024｜호스팅서비스: heritagefloss. 고객센터: info@heritagefloss.com</p>
+        </div>
+        <div class="footer4">
+            <img src="img/footer4.png" alt="SportCasual_footerimg">
+        </div>
+    </footer>
+</body>
+
+</html>
